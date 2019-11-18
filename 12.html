@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function dangky() {
+			alert("Đăng ký thành công !");
+		}
+	</script>
+	<style type="text/css">
+		#dv {
+			background: #99FFCC;
+			width: 60%;
+			margin: auto;
+			height: 400px
+		}
+
+		#f {
+			text-align: center;
+			font-size: 25px;
+			color: red
+		}
+
+		table {
+			margin: auto;
+			background: white
+		}
+
+		form {
+			margin-top: 30px
+		}
+	</style>
+</head>
+
+<body>
+	<div id="dv">
+		<form>
+			<p id="f">Phiếu đăng ký tham chương trình khuyến mại</p>
+			<table id="tb" border="1">
+				<tr>
+					<td>Họ và tên</td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td>Địa chỉ</td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td>Điện thoại</td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td>Giới tính</td>
+					<td><input type="radio" name="rdbGt" />Nam<input type="radio" name="rdbGt" />Nữ<span
+							id="errGioiTinh" class="err"></span><br /></td>
+				</tr>
+				<tr>
+					<td>Nghề nghiệp</td>
+					<td>
+						<select name="Nghề nghiệp">
+							<option>Lập trình viên</option>
+							<option>Giáo viên</option>
+							<option>Kế toán</option>
+							<option>Công nhân</option>
+							<option>Thợ cơ khí</option>
+							<option>Kỹ sư</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Chọn sản phẩm tham gia</td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td>Số người dự đoán tham gia</td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<th colspan="2"><input type="button" value="Đăng ký" onclick="dangky()"></th>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+
+</html>
